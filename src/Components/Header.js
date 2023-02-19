@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Icon } from '@mui/material';
-import Avatar from '@mui/material/Avatar';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
