@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Icon } from '@mui/material';
+import Avatar from '@mui/material/Avatar';
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
 
@@ -14,7 +16,7 @@ class Header extends Component {
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} color={["#7D7D7D", "#000", "#E6E5E5", "#525353"]}/>
+        <ParticlesBg type="circle" bg={true} color={["#7D7D7D", "#000", "#E6E5E5", "#525353"]} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -56,7 +58,7 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#portfolio">
+              <a className="smoothscroll" href="#services">
                 Works
               </a>
             </li>
@@ -98,6 +100,7 @@ class Header extends Component {
             </Fade> */}
           </div>
         </div>
+
 
         <p className="scrolldown">
           <a className="smoothscroll" href="#about">

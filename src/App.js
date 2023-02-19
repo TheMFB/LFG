@@ -7,14 +7,15 @@ import Footer from "./Components/Footer";
 import About from "./Components/About";
 import LFG from "./Components/LFG";
 import Contact from "./Components/Contact";
-import Portfolio from "./Components/Portfolio";
+import Services from "./Components/Services";
+import Testimonials from "./Components/Testimonials";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       foo: "bar",
-      lfgData: {}
+      lfgData: {},
     };
 
     ReactGA.initialize("UA-110570651-1");
@@ -26,10 +27,10 @@ class App extends Component {
       url: "./lfgData.json",
       dataType: "json",
       cache: false,
-      success: function(data) {
+      success: function (data) {
         this.setState({ lfgData: data });
       }.bind(this),
-      error: function(xhr, status, err) {
+      error: function (xhr, status, err) {
         console.log(err);
         alert(err);
       }
@@ -43,12 +44,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+
         <Header data={this.state.lfgData.main} />
         <About data={this.state.lfgData.main} />
         {/* <LFG data={this.state.lfgData.lfg} /> */}
-        {/* <Portfolio data={this.state.lfgData.portfolio} /> */}
-        {/* <Contact data={this.state.lfgData.main} /> */}
+        <Services services={this.state.lfgData.services}/>
         {/* <Footer data={this.state.lfgData.main} /> */}
+        <Testimonials testimonials={this.state.lfgData.testimonials}/>
+        <Contact data={this.state.lfgData.main} />
       </div>
     );
   }

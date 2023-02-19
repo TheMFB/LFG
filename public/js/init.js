@@ -1,9 +1,9 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   var time = 380;
-  setTimeout(function() {
+  setTimeout(function () {
     $("h1.responsive-headline").fitText(1, { minFontSize: "40px", maxFontSize: "90px" });
 
-    $(".smoothscroll").on("click", function(e) {
+    $(".smoothscroll").on("click", function (e) {
       e.preventDefault();
       var target = this.hash,
         $target = $(target);
@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
           },
           800,
           "swing",
-          function() {
+          function () {
             window.location.hash = target;
           }
         );
@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
     var navigation_links = $("#nav-wrap a");
 
     sections.waypoint({
-      handler: function(event, direction) {
+      handler: function (event, direction) {
         var active_section;
 
         active_section = $(this);
@@ -41,12 +41,12 @@ jQuery(document).ready(function($) {
     });
 
     $("header").css({ height: $(window).height() });
-    $(window).on("resize", function() {
+    $(window).on("resize", function () {
       $("header").css({ height: $(window).height() });
       $("body").css({ width: $(window).width() });
     });
 
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
       var h = $("header").height();
       var y = $(window).scrollTop();
       var nav = $("#nav-wrap");
@@ -74,29 +74,33 @@ jQuery(document).ready(function($) {
       randomize: false
     });
 
-    $("form#contactForm button.submit").click(function() {
+    $("form#contactForm button.submit").on("click", function () {
+      console.log('handle click')
       $("#image-loader").fadeIn();
 
       var contactName = $("#contactForm #contactName").val();
       var contactEmail = $("#contactForm #contactEmail").val();
-      var contactSubject = $("#contactForm #contactSubject").val();
       var contactMessage = $("#contactForm #contactMessage").val();
 
-      var data =
-        "contactName=" +
-        contactName +
-        "&contactEmail=" +
-        contactEmail +
-        "&contactSubject=" +
-        contactSubject +
-        "&contactMessage=" +
-        contactMessage;
+      var data = {
+        service_id: 'lfg_form',
+        template_id: 'lfg_template',
+        user_id: 'Fp_oetBuS1fnFV4ea',
+        template_params: {
+          'contactName': contactName,
+          'contactEmail': contactEmail,
+          'contactMessage': contactMessage
+
+        }
+      };
 
       $.ajax({
         type: "POST",
-        url: "inc/sendEmail.php",
-        data: data,
-        success: function(msg) {
+        url: "https://api.emailjs.com/api/v1.0/email/send",
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        success: function (msg) {
+          console.log('success')
           // Message was sent
           if (msg == "OK") {
             $("#image-loader").fadeOut();
