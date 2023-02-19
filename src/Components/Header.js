@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Icon } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
 
@@ -8,10 +9,6 @@ class Header extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const project = this.props.data.project;
-    const github = this.props.data.github;
-    const name = this.props.data.name;
-    const description = this.props.data.description;
     const profilepic = "images/lfg-only.png";
 
     return (
@@ -29,19 +26,20 @@ class Header extends Component {
           <ul id="nav" className="nav">
             <li className="current">
               <a className="smoothscroll" href="#home">
-                Home
+                <Icon fontSize="medium">home</Icon>
               </a>
             </li>
 
             <li>
               <a href="http://www.instagram.com/layingfoundationalgrowth">
-                Instagram
+                <InstagramIcon fontSize="medium" sx={{ width: '1.5em', height: '1.5em' }} />
               </a>
+
             </li>
 
             <li>
               <a href="mailto: John@layingfoundationalgrowth.com" >
-                Contact Us
+                <Icon fontSize="medium">mail</Icon>
               </a>
             </li>
 

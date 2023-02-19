@@ -10,9 +10,11 @@ class Services extends Component {
         <Fade duration={1000}>
           <div className="row center">
 
-            <div className="nine columns main-col">
+            <div className="nine columns main-col center-div">
               <h1>{this.props.services.title}</h1>
-              {this.props.services.services.map((service) => (<Service icon={service.icon} text={service.text} color={this.props.services.color} bgColor={this.props.services.bgColor} bgColor2={this.props.services.bgColor2} />))}
+              <div className="services-list">
+                {this.props.services.services.map((service) => (<Service icon={service.icon} text={service.text} color={this.props.services.color} bgColor={this.props.services.bgColor} bgColor2={this.props.services.bgColor2} />))}
+              </div>
             </div>
           </div>
         </Fade>
