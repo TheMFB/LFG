@@ -2,7 +2,7 @@
   "main": {
     "name": "LFG",
     "description": "Laying Foundational Growth",
-    "bio": "Lets discuss how we can improve your company’s revenue-generating plans.",
+    "bio": "Experts in bringing innovations to market and scaling the companies behind them",
     "contactTitle": "Get In Touch.",
     "contactMessage": "Let us know how to get ahold of you!",
     "messageSuccess": "Your message was sent, thank you!",
@@ -44,14 +44,16 @@
     "title": "Client Testimonials",
     "testimonials": [
       {
-        "title": "ECommerce: Year Over Year Growth",
-        "text": "Rainfactory consistently crushes it, and fights for growth",
-        "user": "Kyle Doerkson CEO, Future Motion, Inc."
+        "text": "LFG worked with us the start of the product’s life. From community building, to successful Kickstarter and Indiegogo campaigns and finally migrating over to our own Shopify page seamlessly",
+        "user": "Nathan CEO, KUBE Sound."
       },
       {
-        "title": "ECommerce: Year Over Year Growth",
-        "text": "Rainfactory consistently crushes it, and fights for growth",
-        "user": "Kyle Doerkson CEO, Future Motion, Inc."
+        "text": "LFG helped us create an entirely new product category and to sell over 1M in product in our first month",
+        "user": "Cody CEO, Kara."
+      },
+      {
+        "text": "With LFG’s guidance we were able to successfully launch Sens.ai into a new category",
+        "user": "Geoff COO - Sens.ai."
       }
     ]
   }
