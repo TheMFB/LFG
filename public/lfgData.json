@@ -19,16 +19,16 @@
     "bgColor2": "#f6f6f6",
     "services": [
       {
+        "icon": "rocket_launch",
+        "text": "New Product Launches & Crowdfunding"
+      },
+      {
         "icon": "attach_money",
         "text": "Ecommerce Growth"
       },
       {
         "icon": "storefront",
         "text": "Marketing & Retail Strategy"
-      },
-      {
-        "icon": "rocket_launch",
-        "text": "New Product Launches & Crowdfunding"
       },
       {
         "icon": "campaign",
