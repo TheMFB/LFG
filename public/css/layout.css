@@ -300,7 +300,7 @@ ul#nav li.current a {
   border-bottom: 1px solid #e8e8e8;
 }
 #lfg .info {
-  font: 16px/24px "librebaskerville-italic", serif;
+  /* font: 16px/24px "librebaskerville-italic", serif; */
   color: #6e7881;
   margin-bottom: 18px;
   margin-top: 9px;
@@ -764,7 +764,7 @@ call-to-action .button {
   content: none;
 }
 #testimonials0 blockquote p {
-  font-family: "librebaskerville-italic", serif;
+  /* font-family: "librebaskerville-italic", serif; */
   padding: 0;
   font-size: 24px;
   line-height: 48px;
@@ -797,7 +797,7 @@ call-to-action .button {
   content: none;
 }
 #testimonials0 blockquote p {
-  font-family: "librebaskerville-italic", serif;
+  /* font-family: "librebaskerville-italic", serif; */
   padding: 0;
   font-size: 24px;
   line-height: 48px;
@@ -875,7 +875,7 @@ call-to-action .button {
   content: none;
 }
 #testimonials1 blockquote p {
-  font-family: "librebaskerville-italic", serif;
+  /* font-family: "librebaskerville-italic", serif; */
   padding: 0;
   font-size: 24px;
   line-height: 48px;
@@ -915,7 +915,7 @@ call-to-action .button {
   padding-bottom: 66px;
 }
 #testimonials2 h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
+  font: 18px/24px "opensans-light", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
@@ -927,7 +927,7 @@ call-to-action .button {
   padding-top: 9px;
 }
 #testimonials2 .header-col h1:before {
-  font-family: "FontAwesome";
+  /* font-family: "FontAwesome"; */
   content: "\f10d";
   padding-right: 10px;
   font-size: 72px;
@@ -952,7 +952,7 @@ call-to-action .button {
   content: none;
 }
 #testimonials2 blockquote p {
-  font-family: "librebaskerville-italic", serif;
+  /* font-family: "librebaskerville-italic", serif; */
   padding: 0;
   font-size: 24px;
   line-height: 48px;
