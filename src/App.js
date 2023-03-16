@@ -48,7 +48,7 @@ class App extends Component {
         />
 
         <Header data={this.state.lfgData.main} />
-        <About data={this.state.lfgData.main} />
+        {/* <About data={this.state.lfgData.main} /> */}
         {/* <LFG data={this.state.lfgData.lfg} /> */}
         <Services services={this.state.lfgData.services}/>
         {/* <Footer data={this.state.lfgData.main} /> */}
