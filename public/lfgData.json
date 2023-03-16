@@ -4,7 +4,7 @@
     "description": "Laying Foundational Growth",
     "bio": "Experts in bringing innovations to market and scaling the companies behind them",
     "contactTitle": "Get In Touch.",
-    "contactMessage": "Let us know how to get ahold of you!",
+    "contactMessage": "Interested? Let's Chat!",
     "messageSuccess": "Your message was sent, thank you!",
     "messageError": "Uh oh! Something went wrong. Please try again.",
     "submitButtonText": "Submit",
@@ -19,24 +19,20 @@
     "bgColor2": "#f6f6f6",
     "services": [
       {
-        "icon": "sell",
-        "text": "Market Research & Positioning"
-      },
-      {
         "icon": "attach_money",
-        "text": "Market Research & Positioning"
+        "text": "Ecommerce Growth"
       },
       {
         "icon": "storefront",
-        "text": "Market Research & Positioning"
+        "text": "Marketing & Retail Strategy"
       },
       {
         "icon": "rocket_launch",
-        "text": "Market Research & Positioning"
+        "text": "New Product Launches & Crowdfunding"
       },
       {
         "icon": "campaign",
-        "text": "Market Research & Positioning"
+        "text": "Community Building & Engagement"
       }
     ]
   },
