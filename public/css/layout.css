@@ -466,8 +466,8 @@ ul#nav li.current a {
   display: flex;
 }
 #services .item {
-   width: 100%;
-   text-align: -webkit-center;
+  width: 100%;
+  text-align: -webkit-center;
 }
 #services h1 {
   font: 22px/30px "opensans-bold", sans-serif;
@@ -708,8 +708,8 @@ call-to-action .button {
 /* g. Testimonials
 /* ------------------------------------------------------------------ */
 
-#testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
+#testimonials0 {
+  background: #1f1f1f url(../images/kubesound.png) no-repeat center center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
@@ -718,24 +718,27 @@ call-to-action .button {
   min-height: 200px;
   width: 100%;
   overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-#testimonials .text-container {
+
+#testimonials0 .text-container {
   padding-top: 96px;
   padding-bottom: 66px;
 }
-#testimonials h1 {
+#testimonials0 h1 {
   font: 18px/24px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
 }
-#testimonials h1 span {
+#testimonials0 h1 span {
   display: none;
 }
-#testimonials .header-col {
+#testimonials0 .header-col {
   padding-top: 9px;
 }
-#testimonials .header-col h1:before {
+#testimonials0 .header-col h1:before {
   font-family: "FontAwesome";
   content: "\f10d";
   padding-right: 10px;
@@ -747,38 +750,228 @@ call-to-action .button {
 }
 
 /*	Blockquotes */
-#testimonials blockquote {
+#testimonials0 blockquote {
   margin: 0 0px 30px 0px;
-  padding-left: 0;
+  padding-left: 30px !important;
   position: relative;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 40px rgba(0,0,0,.1);
 }
-#testimonials blockquote:before {
+#testimonials0 blockquote:before {
   content: none;
 }
-#testimonials blockquote p {
+#testimonials0 blockquote p {
   font-family: "librebaskerville-italic", serif;
   padding: 0;
   font-size: 24px;
   line-height: 48px;
   color: #fff;
 }
-#testimonials blockquote cite {
+#testimonials0 blockquote cite {
   display: block;
   font-size: 12px;
   font-style: normal;
   line-height: 18px;
   color: #fff;
 }
-#testimonials blockquote cite:before {
+#testimonials0 blockquote cite:before {
   content: "\2014 \0020";
 }
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited {
+#testimonials0 blockquote cite a,
+#testimonials0 blockquote cite a:visited {
+  color: #8b9798;
+  border: none;
+}
+#testimonials0 blockquote {
+  margin: 0 0px 30px 0px;
+  padding-left: 0;
+  padding-right: 30px !important;
+
+  position: relative;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+#testimonials0 blockquote:before {
+  content: none;
+}
+#testimonials0 blockquote p {
+  font-family: "librebaskerville-italic", serif;
+  padding: 0;
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+}
+#testimonials0 blockquote cite {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 18px;
+  color: #fff;
+}
+#testimonials0 blockquote cite:before {
+  content: "\2014 \0020";
+}
+#testimonials0 blockquote cite a,
+#testimonials0 blockquote cite a:visited {
   color: #8b9798;
   border: none;
 }
 
+#testimonials1 {
+  background: #1f1f1f url(../images/kara.png) no-repeat center center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  background-attachment: fixed;
+
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#testimonials1 .text-container {
+  padding-top: 96px;
+  padding-bottom: 66px;
+}
+#testimonials1 h1 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+#testimonials1 h1 span {
+  display: none;
+}
+#testimonials1 .header-col {
+  padding-top: 9px;
+}
+#testimonials1 .header-col h1:before {
+  font-family: "FontAwesome";
+  content: "\f10d";
+  padding-right: 10px;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: left;
+  float: left;
+  color: #fff;
+}
+
+/*	Blockquotes */
+#testimonials1 blockquote {
+  margin: 0 0px 30px 0px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+
+  position: relative;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+#testimonials1 blockquote:before {
+  content: none;
+}
+#testimonials1 blockquote p {
+  font-family: "librebaskerville-italic", serif;
+  padding: 0;
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+}
+#testimonials1 blockquote cite {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 18px;
+  color: #fff;
+}
+#testimonials1 blockquote cite:before {
+  content: "\2014 \0020";
+}
+#testimonials1 blockquote cite a,
+#testimonials1 blockquote cite a:visited {
+  color: #8b9798;
+  border: none;
+}
+
+#testimonials2 {
+  background: #1f1f1f url(../images/sensedotai.png) no-repeat center center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  background-attachment: fixed;
+
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+#testimonials2 .text-container {
+  padding-top: 96px;
+  padding-bottom: 66px;
+}
+#testimonials2 h1 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+#testimonials2 h1 span {
+  display: none;
+}
+#testimonials2 .header-col {
+  padding-top: 9px;
+}
+#testimonials2 .header-col h1:before {
+  font-family: "FontAwesome";
+  content: "\f10d";
+  padding-right: 10px;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: left;
+  float: left;
+  color: #fff;
+}
+
+/*	Blockquotes */
+#testimonials2 blockquote {
+  margin: 0 0px 30px 0px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  position: relative;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+#testimonials2 blockquote:before {
+  content: none;
+}
+#testimonials2 blockquote p {
+  font-family: "librebaskerville-italic", serif;
+  padding: 0;
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+}
+#testimonials2 blockquote cite {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 18px;
+  color: #fff;
+}
+#testimonials2 blockquote cite:before {
+  content: "\2014 \0020";
+}
+#testimonials2 blockquote cite a,
+#testimonials2 blockquote cite a:visited {
+  color: #8b9798;
+  border: none;
+}
 /* Flex Slider
 /* ------------------------------------------------------------------ */
 
