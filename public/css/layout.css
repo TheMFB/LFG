@@ -470,11 +470,12 @@ ul#nav li.current a {
   text-align: -webkit-center;
 }
 #services h1 {
-  font: 22px/30px "opensans-bold", sans-serif;
+  font: 30px "opensans-bold", sans-serif;
   /* color: #fff; */
   text-align: center;
+  margin-bottom: 40px;
 
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   color: #00608a;
 }
 #services p {
@@ -757,7 +758,7 @@ call-to-action .button {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 
   background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 30px 40px rgba(0,0,0,.1);
+  /* box-shadow: 0 30px 40px rgba(0,0,0,.1); */
 }
 #testimonials0 blockquote:before {
   content: none;
@@ -868,7 +869,7 @@ call-to-action .button {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 
   background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 30px 40px rgba(0,0,0,.1);
+  /* box-shadow: 0 30px 40px rgba(0,0,0,.1); */
 }
 #testimonials1 blockquote:before {
   content: none;
@@ -906,7 +907,7 @@ call-to-action .button {
   min-height: 200px;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 #testimonials2 .text-container {
@@ -945,7 +946,7 @@ call-to-action .button {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 
   background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 30px 40px rgba(0,0,0,.1);
+  /* box-shadow: 0 30px 40px rgba(0,0,0,.1); */
 }
 #testimonials2 blockquote:before {
   content: none;
@@ -1130,8 +1131,9 @@ call-to-action .button {
   margin-bottom: 6px;
 }
 #contact p.lead {
-  font: 18px/36px "opensans-light", sans-serif;
+  font: 30px "opensans-light", sans-serif;
   padding-right: 3%;
+  color: white;
 }
 #contact .header-col {
   padding-top: 6px;
