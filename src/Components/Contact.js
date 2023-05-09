@@ -2,10 +2,28 @@ import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
 
 class Contact extends Component {
+  state = {
+    name: "",
+    email: "",
+    message: "",
+    isFormValid: false,
+  };
+
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value }, this.validateForm);
+  };
+
+  validateForm = () => {
+    const { name, email, message } = this.state;
+    const isFormValid = name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
+    this.setState({ isFormValid });
+  };
+
   render() {
     if (!this.props.data) return null;
 
-    const message = this.props.data.contactMessage;
+    const { contactMessage, contactTitle, submitButtonText, messageError, messageSuccess } = this.props.data;
 
     return (
       <section id="contact">
@@ -13,12 +31,12 @@ class Contact extends Component {
           <div className="row section-head">
             <div className="two columns header-col">
               <h1>
-                <span>{this.props.data.contactTitle}</span>
+                <span>{contactTitle}</span>
               </h1>
             </div>
 
             <div className="ten columns">
-              <p className="lead">{message}</p>
+              <p className="lead">{contactMessage}</p>
             </div>
           </div>
         </Fade>
@@ -34,10 +52,10 @@ class Contact extends Component {
                     </label>
                     <input
                       type="text"
-                      defaultValue=""
+                      value={this.state.name}
                       size="35"
                       id="contactName"
-                      name="contactName"
+                      name="name"
                       onChange={this.handleChange}
                     />
                   </div>
@@ -48,10 +66,10 @@ class Contact extends Component {
                     </label>
                     <input
                       type="text"
-                      defaultValue=""
+                      value={this.state.email}
                       size="35"
                       id="contactEmail"
-                      name="contactEmail"
+                      name="email"
                       onChange={this.handleChange}
                     />
                   </div>
@@ -63,13 +81,17 @@ class Contact extends Component {
                     <textarea
                       cols="50"
                       rows="15"
+                      value={this.state.message}
                       id="contactMessage"
-                      name="contactMessage"
+                      name="message"
+                      onChange={this.handleChange}
                     ></textarea>
                   </div>
 
                   <div>
-                    <button className="submit">{this.props.data.submitButtonText}</button>
+                    <button className="submit" disabled={!this.state.isFormValid}>
+                      {submitButtonText}
+                    </button>
                     <span id="image-loader">
                       <img alt="" src="images/loader.gif" />
                     </span>
@@ -77,15 +99,14 @@ class Contact extends Component {
                 </fieldset>
               </form>
 
-              <div id="message-warning">{this.props.data.messageError}</div>
+              <div id="message-warning">{messageError}</div>
               <div id="message-success">
-                <i className="fa fa-check"></i>{this.props.data.messageSuccess}
+                <i className="fa fa-check"></i>
+                {messageSuccess}
                 <br />
               </div>
             </div>
           </Slide>
-
-
         </div>
       </section>
     );

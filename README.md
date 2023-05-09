@@ -3,6 +3,8 @@
 # Run Project
 ### 1. Clone the project
 
+`nvm use 14`
+
 ### 2. Run the project
 ```shell
 npm i
